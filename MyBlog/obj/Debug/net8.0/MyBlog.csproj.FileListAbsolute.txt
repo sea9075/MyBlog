@@ -134,3 +134,4 @@ C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\refint\MyBlog.dll
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.pdb
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.genruntimeconfig.cache
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\ref\MyBlog.dll
+C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.sourcelink.json
