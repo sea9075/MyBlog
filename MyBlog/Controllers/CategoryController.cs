@@ -23,7 +23,7 @@ namespace MyBlog.Controllers
         [HttpPost]
         public IActionResult Create(Category category)
         {
-            if (category.CategoryName == category.CategoryName)
+            if (category.CategoryName == category.CategoryId.ToString())
             {
                 ModelState.AddModelError("CategoryName", "類別名稱不能跟類別序號一致");
             }
@@ -32,6 +32,7 @@ namespace MyBlog.Controllers
             {
                 _db.Categories.Add(category);
                 _db.SaveChanges();
+                TempData["success"] = "類別新增成功";
                 return RedirectToAction("Index");
             }
             return View();
@@ -59,6 +60,7 @@ namespace MyBlog.Controllers
             {
                 _db.Categories.Update(category);
                 _db.SaveChanges();
+                TempData["success"] = "類別新增成功";
                 return RedirectToAction("Index");
             }
             return View();
@@ -91,6 +93,7 @@ namespace MyBlog.Controllers
 
             _db.Categories.Remove(category);
             _db.SaveChanges();
+            TempData["success"] = "類別刪除成功";
             return RedirectToAction("Index");
         }
     }
