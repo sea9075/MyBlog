@@ -135,3 +135,9 @@ C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.pdb
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.genruntimeconfig.cache
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\ref\MyBlog.dll
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.sourcelink.json
+C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\MyBlog.DataAccess.dll
+C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\MyBlog.Models.dll
+C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\MyBlog.Utility.dll
+C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\MyBlog.DataAccess.pdb
+C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\MyBlog.Models.pdb
+C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\MyBlog.Utility.pdb

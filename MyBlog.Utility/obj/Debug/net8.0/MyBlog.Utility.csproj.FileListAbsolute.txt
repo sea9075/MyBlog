@@ -1,0 +1,12 @@
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\bin\Debug\net8.0\MyBlog.Utility.deps.json
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\bin\Debug\net8.0\MyBlog.Utility.dll
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\bin\Debug\net8.0\MyBlog.Utility.pdb
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\MyBlog.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\MyBlog.Utility.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\MyBlog.Utility.AssemblyInfo.cs
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\MyBlog.Utility.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\MyBlog.Utility.sourcelink.json
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\MyBlog.Utility.dll
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\refint\MyBlog.Utility.dll
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\MyBlog.Utility.pdb
+C:\Users\user\Desktop\MyBlog\MyBlog.Utility\obj\Debug\net8.0\ref\MyBlog.Utility.dll

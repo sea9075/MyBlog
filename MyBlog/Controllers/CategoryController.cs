@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyBlog.Data;
+using MyBlog.DataAccess.Data;
 using MyBlog.Models;
 
 namespace MyBlog.Controllers

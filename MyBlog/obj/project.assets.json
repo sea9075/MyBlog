@@ -1502,6 +1502,42 @@
             "rid": "win"
           }
         }
+      },
+      "MyBlog.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
+          "MyBlog.Models": "1.0.0",
+          "MyBlog.Utility": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.DataAccess.dll": {}
+        }
+      },
+      "MyBlog.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MyBlog.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Models.dll": {}
+        }
+      },
+      "MyBlog.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MyBlog.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Utility.dll": {}
+        }
       }
     }
   },
@@ -4096,13 +4132,29 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MyBlog.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.DataAccess/MyBlog.DataAccess.csproj",
+      "msbuildProject": "../MyBlog.DataAccess/MyBlog.DataAccess.csproj"
+    },
+    "MyBlog.Models/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Models/MyBlog.Models.csproj",
+      "msbuildProject": "../MyBlog.Models/MyBlog.Models.csproj"
+    },
+    "MyBlog.Utility/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Utility/MyBlog.Utility.csproj",
+      "msbuildProject": "../MyBlog.Utility/MyBlog.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.7",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.7"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
+      "MyBlog.DataAccess >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4132,7 +4184,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog.DataAccess\\MyBlog.DataAccess.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
