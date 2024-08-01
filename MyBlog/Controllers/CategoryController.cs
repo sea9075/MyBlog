@@ -1,19 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyBlog.DataAccess.Data;
+using MyBlog.DataAccess.Repository.IRepository;
 using MyBlog.Models;
 
 namespace MyBlog.Controllers
 {
     public class CategoryController : Controller
     {
-        private readonly ApplicationDbContext _db;
-        public CategoryController(ApplicationDbContext db)
+        private readonly ICategoryRepository _categoryRepository;
+        public CategoryController(ICategoryRepository db)
         {
-            _db = db; 
+            _categoryRepository = db; 
         }
         public IActionResult Index()
         {
-            List<Category> categories = _db.Categories.ToList();
+            List<Category> categories = _categoryRepository.GetAll().ToList();
             return View(categories);
         }
         public IActionResult Create()
@@ -30,8 +31,8 @@ namespace MyBlog.Controllers
 
             if (ModelState.IsValid)
             {
-                _db.Categories.Add(category);
-                _db.SaveChanges();
+                _categoryRepository.Add(category);
+                _categoryRepository.Save();
                 TempData["success"] = "類別新增成功";
                 return RedirectToAction("Index");
             }
@@ -44,7 +45,7 @@ namespace MyBlog.Controllers
                 return NotFound();
             }
 
-            Category? category = _db.Categories.FirstOrDefault(c => c.CategoryId == id);
+            Category? category = _categoryRepository.Get(c => c.CategoryId == id);
 
             if (category == null)
             {
@@ -58,8 +59,8 @@ namespace MyBlog.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(category);
-                _db.SaveChanges();
+                _categoryRepository.Update(category);
+                _categoryRepository.Save();
                 TempData["success"] = "類別新增成功";
                 return RedirectToAction("Index");
             }
@@ -72,7 +73,7 @@ namespace MyBlog.Controllers
                 return NotFound();
             }
 
-            Category category = _db.Categories.Find(id);
+            Category category = _categoryRepository.Get(c => c.CategoryId == id);
 
             if (category == null)
             {
@@ -84,15 +85,15 @@ namespace MyBlog.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
-            Category? category = _db.Categories.Find(id);
+            Category? category = _categoryRepository.Get(c => c.CategoryId == id);
 
             if (category == null)
             {
                 return NotFound();
             }
 
-            _db.Categories.Remove(category);
-            _db.SaveChanges();
+            _categoryRepository.Reomve(category);
+            _categoryRepository.Save();
             TempData["success"] = "類別刪除成功";
             return RedirectToAction("Index");
         }
