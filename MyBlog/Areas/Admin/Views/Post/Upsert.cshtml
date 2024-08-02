@@ -1,0 +1,65 @@
+﻿@model PostVM
+
+<form method="post">
+    <input asp-for="Post.PostId" hidden />
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">@(Model.Post.PostId != 0 ? "Edit" : "Add") Post</h2>
+            <hr />
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Post.Title" class="p-0"></label>
+            <input asp-for="Post.Title" class="form-control" />
+            <span asp-validation-for="Post.Title" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Post.Content" class="p-0"></label>
+            <textarea asp-for="Post.Content" class="form-control" id="markdown-editor"></textarea>
+            <span asp-validation-for="Post.Content" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Post.CreatedAt" class="p-0"></label>
+            <input asp-for="Post.CreatedAt" class="form-control" />
+            <span asp-validation-for="Post.CreatedAt" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Post.Author" class="p-0"></label>
+            <input asp-for="Post.Author" class="form-control" />
+            <span asp-validation-for="Post.Author" class="text-danger"></span>
+        </div>
+        <div class="mb-3 row p-1">
+            <label asp-for="Post.CategoryId" class="p-0"></label>
+            <select asp-for="Post.CategoryId" asp-items="@Model.CategoryList" class="form-select">
+                <option disabled selected>請選擇類別</option>
+            </select>
+            <span asp-validation-for="Post.CategoryId" class="text-danger"></span>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-3">
+                @if (Model.Post.PostId != 0)
+                {
+                    <button type="submit" class="btn btn-primary form-control">編輯</button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-primary form-control">新增</button>
+                }
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Post" asp-action="Index" class="btn btn-secondary border form-control">
+                    返回
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script>
+        var simplemde = new SimpleMDE({ element: document.getElementById("markdown-editor") });
+    </script>
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

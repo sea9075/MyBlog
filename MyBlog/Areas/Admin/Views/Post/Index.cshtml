@@ -1,0 +1,43 @@
+﻿@model List<Post>
+
+<div class="container">
+    <div class="row pt-4 pd-3">
+        <div class="col-6">
+            <h2 class="text-primary">Post List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-controller="Post" asp-action="Upsert" class="btn btn-primary">
+                <i class="bg-info bi-plus-circle"></i> Create Post
+            </a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>文章標題</th>
+            <th>發表時間</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.OrderBy(p => p.PostId))
+        {
+            <tr>
+                <td>@obj.Title</td>
+                <td>@obj.CreatedAt</td>
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Post" asp-action="Upsert" asp-route-id="@obj.PostId" class="btn btn-primary mx-2">
+                            <i class="bi bi-pencil-square"></i>編輯
+                        </a>
+                        <a asp-controller="Post" asp-action="Delete" asp-route-id="@obj.PostId" class="btn btn-danger mx-2">
+                            <i class="bi bi-trash-fill"></i>刪除
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

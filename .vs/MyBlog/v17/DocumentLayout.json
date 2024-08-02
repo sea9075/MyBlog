@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\MyBlog\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\areas\\admin\\controllers\\postcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\areas\\admin\\controllers\\postcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB30DCC3-3451-4686-9BAA-0E58CD8C82EB}|MyBlog.DataAccess\\MyBlog.DataAccess.csproj|c:\\users\\user\\desktop\\myblog\\myblog.dataaccess\\repository\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB30DCC3-3451-4686-9BAA-0E58CD8C82EB}|MyBlog.DataAccess\\MyBlog.DataAccess.csproj|solutionrelative:myblog.dataaccess\\repository\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\areas\\admin\\views\\post\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\areas\\admin\\views\\post\\upsert.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\areas\\admin\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\areas\\admin\\views\\post\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PostRepository.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog.DataAccess\\Repository\\PostRepository.cs",
+              "RelativeDocumentMoniker": "MyBlog.DataAccess\\Repository\\PostRepository.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog.DataAccess\\Repository\\PostRepository.cs",
+              "RelativeToolTip": "MyBlog.DataAccess\\Repository\\PostRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T15:21:28.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "RelativeDocumentMoniker": "MyBlog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "RelativeToolTip": "MyBlog\\Areas\\Admin\\Views\\Post\\Index.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T15:11:51.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Upsert.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Views\\Post\\Upsert.cshtml",
+              "RelativeDocumentMoniker": "MyBlog\\Areas\\Admin\\Views\\Post\\Upsert.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Views\\Post\\Upsert.cshtml",
+              "RelativeToolTip": "MyBlog\\Areas\\Admin\\Views\\Post\\Upsert.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T15:04:29.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PostController .cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Controllers\\PostController .cs",
+              "RelativeDocumentMoniker": "MyBlog\\Areas\\Admin\\Controllers\\PostController .cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Controllers\\PostController .cs",
+              "RelativeToolTip": "MyBlog\\Areas\\Admin\\Controllers\\PostController .cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAkwGgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T15:00:06.04Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

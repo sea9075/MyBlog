@@ -11,5 +11,6 @@ namespace MyBlog.DataAccess.Data
         }
 
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Post> Posts { get; set; }
     }
 }

@@ -10,3 +10,4 @@ C:\Users\user\Desktop\MyBlog\MyBlog.Models\obj\Debug\net8.0\MyBlog.Models.dll
 C:\Users\user\Desktop\MyBlog\MyBlog.Models\obj\Debug\net8.0\refint\MyBlog.Models.dll
 C:\Users\user\Desktop\MyBlog\MyBlog.Models\obj\Debug\net8.0\MyBlog.Models.pdb
 C:\Users\user\Desktop\MyBlog\MyBlog.Models\obj\Debug\net8.0\ref\MyBlog.Models.dll
+C:\Users\user\Desktop\MyBlog\MyBlog.Models\obj\Debug\net8.0\MyBlog.Models.csproj.AssemblyReference.cache
