@@ -1,3 +1,4 @@
+using Markdig;
 using Microsoft.AspNetCore.Mvc;
 using MyBlog.DataAccess.Repository.IRepository;
 using MyBlog.Models;
@@ -29,13 +30,18 @@ namespace MyBlog.Areas.Viewer.Controllers
             
             Post post = _unitOfWork.Post.Get(p => p.PostId == id, includeProperties: "Category");
 
-            if (id == null || id == null)
+            if (id == null || id == 0)
             {
                 return NotFound();
             }
 
             ViewData["Title"] = post.Title;
             ViewData["HeaderImage"] = "post-bg.jpg";
+
+            var pipeline = new MarkdownPipelineBuilder().UseAdvancedExtensions().Build();
+            var result = Markdown.ToHtml(post.Content, pipeline);
+            ViewBag.HtmlContent = result;
+
             return View(post);
         }
 

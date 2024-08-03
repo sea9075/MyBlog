@@ -260,3 +260,4 @@ C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPa
 C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutBack.cshtml.rz.scp.css
+C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\Markdig.dll
