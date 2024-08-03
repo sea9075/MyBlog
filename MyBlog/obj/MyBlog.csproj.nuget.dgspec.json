@@ -266,6 +266,10 @@
               "target": "Package",
               "version": "[0.37.0, )"
             },
+            "Markdown.ColorCode": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"

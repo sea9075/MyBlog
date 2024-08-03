@@ -46,6 +46,35 @@
           }
         }
       },
+      "ColorCode.Core/2.0.15": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/ColorCode.Core.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ColorCode.Core.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "ColorCode.HTML/2.0.15": {
+        "type": "package",
+        "dependencies": {
+          "ColorCode.Core": "2.0.15"
+        },
+        "compile": {
+          "lib/netstandard2.0/ColorCode.HTML.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/ColorCode.HTML.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -649,6 +678,24 @@
         },
         "runtime": {
           "lib/net8.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Markdown.ColorCode/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "ColorCode.Core": "2.0.15",
+          "ColorCode.HTML": "2.0.15",
+          "Markdig": "0.37.0"
+        },
+        "compile": {
+          "lib/net8.0/Markdown.ColorCode.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Markdown.ColorCode.dll": {
             "related": ".xml"
           }
         }
@@ -4655,6 +4702,36 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "ColorCode.Core/2.0.15": {
+      "sha512": "hHU8nzyapaQJUjeGp/T2SRDPLWbNCpCS67SDwSvF2pLMbq3Xe1PUGG8MUM63C3bG9tz9WrI7Rdd/VaTfHh/7qQ==",
+      "type": "package",
+      "path": "colorcode.core/2.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "colorcode.core.2.0.15.nupkg.sha512",
+        "colorcode.core.nuspec",
+        "lib/netstandard1.4/ColorCode.Core.dll",
+        "lib/netstandard1.4/ColorCode.Core.pdb",
+        "lib/netstandard2.0/ColorCode.Core.dll",
+        "lib/netstandard2.0/ColorCode.Core.pdb"
+      ]
+    },
+    "ColorCode.HTML/2.0.15": {
+      "sha512": "8dZYz8q6nueMXUoDPvQqShz7mCjBa7vEBOiPKKEpZ7VhnCEb10GGFcy5eAnaI5UgXkGU06yXWJY/OJmxzbQuwQ==",
+      "type": "package",
+      "path": "colorcode.html/2.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "colorcode.html.2.0.15.nupkg.sha512",
+        "colorcode.html.nuspec",
+        "lib/netstandard1.4/ColorCode.HTML.dll",
+        "lib/netstandard1.4/ColorCode.HTML.pdb",
+        "lib/netstandard2.0/ColorCode.HTML.dll",
+        "lib/netstandard2.0/ColorCode.HTML.pdb"
+      ]
+    },
     "Humanizer/2.14.1": {
       "sha512": "/FUTD3cEceAAmJSCPN9+J+VhGwmL/C12jvwlyM1DFXShEMsBzvLzLqSrJ2rb+k/W2znKw7JyflZgZpyE+tI7lA==",
       "type": "package",
@@ -5422,6 +5499,29 @@
         "markdig.nuspec",
         "markdig.png",
         "readme.md"
+      ]
+    },
+    "Markdown.ColorCode/2.3.0": {
+      "sha512": "m5ojWSpxSlOynsw0OQXCO0Me+Z3UViCdTVX1UhU6kArqNsTLbQ6VVLeF4MTfRqrIe5YE+Bj6yNWRGE6RdnT5SA==",
+      "type": "package",
+      "path": "markdown.colorcode/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGELOG.md",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net6.0/Markdown.ColorCode.dll",
+        "lib/net6.0/Markdown.ColorCode.xml",
+        "lib/net7.0/Markdown.ColorCode.dll",
+        "lib/net7.0/Markdown.ColorCode.xml",
+        "lib/net8.0/Markdown.ColorCode.dll",
+        "lib/net8.0/Markdown.ColorCode.xml",
+        "lib/netstandard2.0/Markdown.ColorCode.dll",
+        "lib/netstandard2.0/Markdown.ColorCode.xml",
+        "markdown.colorcode.2.3.0.nupkg.sha512",
+        "markdown.colorcode.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -13367,6 +13467,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Markdig >= 0.37.0",
+      "Markdown.ColorCode >= 2.3.0",
       "Microsoft.EntityFrameworkCore >= 8.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.7",
@@ -13426,6 +13527,10 @@
           "Markdig": {
             "target": "Package",
             "version": "[0.37.0, )"
+          },
+          "Markdown.ColorCode": {
+            "target": "Package",
+            "version": "[2.3.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
