@@ -120,7 +120,6 @@ C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\staticwebassets\msbuild.bui
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyBlog.props
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyBlog.props
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\scopedcss\bundle\MyBlog.styles.css
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\scopedcss\projectbundle\MyBlog.bundle.scp.css
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.csproj.Up2Date
@@ -260,3 +259,4 @@ C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\runtimes\win\lib\net7.0\Sys
 C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\user\Desktop\MyBlog\MyBlog\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\MyBlog.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\user\Desktop\MyBlog\MyBlog\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutBack.cshtml.rz.scp.css
