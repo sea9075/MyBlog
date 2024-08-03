@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3 row p-1">
             <label asp-for="Post.CreatedAt" class="p-0"></label>
-            <input asp-for="Post.CreatedAt" class="form-control" />
+            <input asp-for="Post.CreatedAt" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd HH:mm")"/>
             <span asp-validation-for="Post.CreatedAt" class="text-danger"></span>
         </div>
         <div class="mb-3 row p-1">

@@ -11,33 +11,19 @@
             </a>
         </div>
     </div>
+
+    <table id="tblData" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>文章標題</th>
+                <th>發表時間</th>
+                <th>類別</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
 </div>
 
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>文章標題</th>
-            <th>發表時間</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var obj in Model.OrderBy(p => p.PostId))
-        {
-            <tr>
-                <td>@obj.Title</td>
-                <td>@obj.CreatedAt</td>
-                <td>
-                    <div class="w-75 btn-group" role="group">
-                        <a asp-controller="Post" asp-action="Upsert" asp-route-id="@obj.PostId" class="btn btn-primary mx-2">
-                            <i class="bi bi-pencil-square"></i>編輯
-                        </a>
-                        <a asp-controller="Post" asp-action="Delete" asp-route-id="@obj.PostId" class="btn btn-danger mx-2">
-                            <i class="bi bi-trash-fill"></i>刪除
-                        </a>
-                    </div>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+@section Scripts{
+    <script src="~/js/post.js"></script>
+}

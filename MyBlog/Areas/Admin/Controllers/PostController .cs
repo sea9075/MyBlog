@@ -17,7 +17,7 @@ namespace MyBlog.Areas.Admin.Controllers
         }
         public IActionResult Index()
         {
-            List<Post> posts = _unitOfWork.Post.GetAll().ToList();
+            List<Post> posts = _unitOfWork.Post.GetAll(includeProperties: "Category").ToList();
             return View(posts);
         }
         public IActionResult Upsert(int? id)
@@ -69,36 +69,29 @@ namespace MyBlog.Areas.Admin.Controllers
                 return View(postVM);
             }
         }
+        
+        #region API CALLS
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            List<Post> postList = _unitOfWork.Post.GetAll(includeProperties: "Category").ToList();
+            return Json(new { data = postList });
+        }
+
+        [HttpDelete]
         public IActionResult Delete(int? id)
         {
-            if (id == null || id == 0)
+            var postToDeleted = _unitOfWork.Post.Get(p => p.PostId == id);
+
+            if (postToDeleted == null)
             {
-                return NotFound();
+                return Json(new {success = false, message = "刪除失敗"});
             }
 
-            Post post = _unitOfWork.Post.Get(c => c.PostId == id);
-
-            if (post == null)
-            {
-                return NotFound();
-            }
-
-            return View(post);
-        }
-        [HttpPost, ActionName("Delete")]
-        public IActionResult DeletePOST(int? id)
-        {
-            Post? post = _unitOfWork.Post.Get(c => c.PostId == id);
-
-            if (post == null)
-            {
-                return NotFound();
-            }
-
-            _unitOfWork.Post.Reomve(post);
+            _unitOfWork.Post.Reomve(postToDeleted);
             _unitOfWork.Save();
-            TempData["success"] = "類別刪除成功";
-            return RedirectToAction("Index");
+            return Json(new { success = true, message = "刪除成功" });
         }
+        #endregion
     }
 }

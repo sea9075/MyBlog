@@ -15,6 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\post.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\frontend\css\clean-blog.css" />
     <None Include="wwwroot\frontend\css\clean-blog.min.css" />
     <None Include="wwwroot\frontend\img\about-bg.jpg" />
@@ -76,6 +80,7 @@
     <None Include="wwwroot\frontend\vendor\font-awesome\scss\_variables.scss" />
     <None Include="wwwroot\frontend\vendor\jquery\jquery.js" />
     <None Include="wwwroot\frontend\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\js\post.js" />
   </ItemGroup>
 
   <ItemGroup>

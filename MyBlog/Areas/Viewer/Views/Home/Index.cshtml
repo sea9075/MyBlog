@@ -1,8 +1,25 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<Post>
+
+@foreach (var post in Model)
+{
+    <div class="post-preview">
+        <a asp-area="Viewer" asp-action="Details" asp-route-id="@post.PostId">
+            <h2 class="post-title">
+                @post.Title
+            </h2>
+        </a>
+        <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+    </div>
+    <hr />
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.markdown-content').forEach(function (element) {
+                var simplemde = new SimpleMDE({ element: element, toolbar: false, status: false, spellChecker: false });
+                element.parentNode.innerHTML = simplemde.markdown(element.value);
+            });
+        });
+    </script>
+}

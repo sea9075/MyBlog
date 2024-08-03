@@ -12,8 +12,8 @@ using MyBlog.DataAccess.Data;
 namespace MyBlog.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240802143638_addForeignKeyPost")]
-    partial class addForeignKeyPost
+    [Migration("20240803113132_addMyBlogDb")]
+    partial class addMyBlogDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
