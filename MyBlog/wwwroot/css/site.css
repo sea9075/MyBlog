@@ -20,3 +20,25 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+img {
+    max-width: 100%
+}
+
+pre {
+    border: none;
+    border-radius: 0px;
+}
+
+pre code{
+    font-size:15px;
+}
+
+li{
+    font-size:17px;
+}
+
+p.author,
+p.createat {
+    font-size: 12px
+}

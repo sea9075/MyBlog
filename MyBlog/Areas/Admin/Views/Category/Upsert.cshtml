@@ -4,7 +4,7 @@
     <input asp-for="CategoryId" hidden />
     <div class="border p-3 mt-4">
         <div class="row pb-2">
-            <h2 class="text-primary">Edit Category</h2>
+            <h2 class="text-primary">@(Model.CategoryId != 0 ? "Edit" : "Add") Category</h2>
             <hr />
         </div>
         <div class="mb-3 row p-1">
@@ -14,7 +14,14 @@
         </div>
         <div class="row">
             <div class="col-6 col-md-3">
-                <button type="submit" class="btn btn-primary form-control">更新</button>
+                @if (Model.CategoryId != 0)
+                {
+                    <button type="submit" class="btn btn-primary form-control">編輯</button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-primary form-control">新增</button>
+                }
             </div>
             <div class="col-6 col-md-3">
                 <a asp-controller="Category" asp-action="Index" class="btn btn-secondary border form-control">

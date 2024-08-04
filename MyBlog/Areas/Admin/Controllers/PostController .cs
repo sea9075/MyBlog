@@ -50,13 +50,14 @@ namespace MyBlog.Areas.Admin.Controllers
                 if (postVM.Post.PostId == 0)
                 {
                     _unitOfWork.Post.Add(postVM.Post);
+                    TempData["success"] = "文章新增成功";
                 }
                 else
                 {
                     _unitOfWork.Post.Update(postVM.Post);
+                    TempData["success"] = "文章編輯成功";
                 }
                 _unitOfWork.Save();
-                TempData["success"] = "文章新增成功";
                 return RedirectToAction("Index");
             }
             else
