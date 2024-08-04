@@ -212,6 +212,7 @@ th {
   a[href^="javascript:"]:after {
     content: "";
   }
+  
   pre,
   blockquote {
     border: 1px solid #999;
@@ -1114,6 +1115,7 @@ figure {
 }
 img {
   vertical-align: middle;
+  max-width:100%
 }
 .img-responsive,
 .thumbnail > img,

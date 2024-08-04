@@ -8,7 +8,7 @@
                 @post.Title
             </h2>
         </a>
-        <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+        <p class="post-meta">Posted by @(post.Author) on @(post.CreatedAt.ToString("yyyy-MM-dd HH:mm"))</p>
     </div>
     <hr />
 }

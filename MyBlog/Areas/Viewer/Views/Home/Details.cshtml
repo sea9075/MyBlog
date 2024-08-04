@@ -1,6 +1,6 @@
 ﻿@model Post
 
-<div>@Html.Raw(ViewBag.HtmlContent)</div>
-<p>Placeholder text by @(Model.Author)</p>
-<p>Create at @(Model.CreatedAt.ToString("yyyy/MM/dd HH:mm"))</p>
+@Html.Raw(ViewBag.HtmlContent)
+<p class="author">Placeholder text by @(Model.Author)</p>
+<p class="createat">Create at @(Model.CreatedAt.ToString("yyyy/MM/dd HH:mm"))</p>
 
