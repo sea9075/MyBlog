@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\js\category.js" />
+    <Content Remove="wwwroot\js\contact.js" />
     <Content Remove="wwwroot\js\post.js" />
   </ItemGroup>
 
@@ -81,6 +82,7 @@
     <None Include="wwwroot\frontend\vendor\font-awesome\scss\_variables.scss" />
     <None Include="wwwroot\frontend\vendor\jquery\jquery.js" />
     <None Include="wwwroot\frontend\vendor\jquery\jquery.min.js" />
+    <None Include="wwwroot\js\contact.js" />
     <None Include="wwwroot\js\category.js" />
     <None Include="wwwroot\js\post.js" />
   </ItemGroup>

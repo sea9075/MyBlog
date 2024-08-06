@@ -1,6 +1,7 @@
 using Markdig;
 using Markdown.ColorCode;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using MyBlog.DataAccess.Repository.IRepository;
 using MyBlog.Models;
 using System.Diagnostics;
@@ -54,10 +55,42 @@ namespace MyBlog.Areas.Viewer.Controllers
             return View();
         }
 
+        public IActionResult AboutMe()
+        {
+            ViewData["Title"] = "About Me";
+            ViewData["HeaderImage"] = "about-bg.jpg";
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewData["Title"] = "Contact Me";
+            ViewData["HeaderImage"] = "contact-bg.jpg";
+            return View();
+        }
+
+        [HttpPost, ActionName("Contact")]
+        public IActionResult ContactMe(Contact contact)
+        {
+            if (ModelState.IsValid)
+            {
+                _unitOfWork.Contact.Add(contact);
+                TempData["success"] = "您已經成功留言";
+            }
+            else
+            {
+                TempData["Error"] = "留言失敗，請在嘗試一次";
+            }
+            _unitOfWork.Save();
+            return RedirectToAction("Contact");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }

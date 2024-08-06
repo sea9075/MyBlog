@@ -12,8 +12,8 @@ using MyBlog.DataAccess.Data;
 namespace MyBlog.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240803113132_addMyBlogDb")]
-    partial class addMyBlogDb
+    [Migration("20240806145252_addContactToDb")]
+    partial class addContactToDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,32 @@ namespace MyBlog.DataAccess.Migrations
                     b.ToTable("Categories");
                 });
 
+            modelBuilder.Entity("MyBlog.Models.Contact", b =>
+                {
+                    b.Property<int>("RespondId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RespondId"));
+
+                    b.Property<string>("RespondEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RespondMeaasge")
+                        .IsRequired()
+                        .HasMaxLength(1024)
+                        .HasColumnType("nvarchar(1024)");
+
+                    b.Property<string>("RespondName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RespondId");
+
+                    b.ToTable("Contacts");
+                });
+
             modelBuilder.Entity("MyBlog.Models.Post", b =>
                 {
                     b.Property<int>("PostId")
@@ -60,7 +86,8 @@ namespace MyBlog.DataAccess.Migrations
 
                     b.Property<string>("Content")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(1024)
+                        .HasColumnType("nvarchar(1024)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");

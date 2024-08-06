@@ -1,0 +1,25 @@
+﻿@model List<Contact>
+
+<div class="container">
+    <div class="row pt-4 pd-3">
+        <div class="col-6">
+            <h2 class="text-primary">Contact List</h2>
+        </div>
+    </div>
+
+
+    <table id="tblData" class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>留言序號</th>
+                <th>留言者</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/contact.js"></script>
+}

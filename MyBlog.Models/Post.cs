@@ -16,6 +16,7 @@ namespace MyBlog.Models
         [Required]
         public string Title { get; set; }
         [Required]
+        [MaxLength(1024)]
         public string Content { get; set; }
         [Required]
         public DateTime CreatedAt { get; set; }

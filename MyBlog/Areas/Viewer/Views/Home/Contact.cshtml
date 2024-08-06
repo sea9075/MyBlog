@@ -1,0 +1,40 @@
+﻿@model Contact
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
+            <form name="sentMessage" method="post" novalidate>
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label asp-for="RespondName" class="p-0"></label>
+                    <input asp-for="RespondName" class="form-control" type="text" placeholder="Name" />
+                    <span asp-validation-for="RespondName" class="text-danger"></span>
+                </div>
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label asp-for="RespondEmail" class="p-0"></label>
+                    <input asp-for="RespondEmail" class="form-control" type="text" placeholder="Email" />
+                    <span asp-validation-for="RespondEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label asp-for="RespondMeaasge" class="p-0"></label>
+                    <textarea asp-for="RespondMeaasge" rows="7" class="form-control" placeholder="Message" id="message"></textarea>
+                    <span asp-validation-for="RespondMeaasge" class="text-danger"></span>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-default">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

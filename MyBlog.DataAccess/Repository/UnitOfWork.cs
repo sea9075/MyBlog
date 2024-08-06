@@ -13,11 +13,13 @@ namespace MyBlog.DataAccess.Repository
         private ApplicationDbContext _db;
         public ICategoryRepository Category {  get; private set; }
         public IPostRepository Post { get; private set; }
+        public IContactRepository Contact {  get; private set; }
         public UnitOfWork(ApplicationDbContext db)
         {
             _db = db;
             Category = new CategoryRepository(_db);
             Post = new PostRepository(_db);
+            Contact = new ContactRepository(_db);
         }
 
         public void Save()

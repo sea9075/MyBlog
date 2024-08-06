@@ -10,6 +10,7 @@ namespace MyBlog.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
         IPostRepository Post { get; }
+        IContactRepository Contact { get; }
         void Save();
     }
 }
