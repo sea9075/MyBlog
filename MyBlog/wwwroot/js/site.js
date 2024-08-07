@@ -1,4 +1,25 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿var body = document.body;
 
-// Write your JavaScript code.
+function goAdmin(e) {
+    const keyin = [38, 40, 38, 40, 37, 39, 37, 39]
+    let keyinIndex = 0;
+
+    document.addEventListener('keydown', function (event) {
+        if (event.keyCode === keyin[keyinIndex]) {
+            keyinIndex++;
+            if (keyinIndex === keyin.length) {
+                keyinIndex = 0;
+                addAdminLink();
+            }
+        } else {
+            keyinIndex = 0;
+        }
+    });
+    function addAdminLink() {
+        var adminlink = document.createElement('a');
+        adminlink.href = '/Admin/Post/Index';
+        adminlink.textContent = 'Post';
+        document.getElementById("goadmin").appendChild(adminlink)
+    } 
+}
+body.addEventListener('keydown', goAdmin, false)

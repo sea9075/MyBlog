@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\MyBlog\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "MyBlog\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "MyBlog\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-07T14:29:58.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MyBlog\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MyBlog\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T14:28:40.628Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
