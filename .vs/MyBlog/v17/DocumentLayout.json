@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\areas\\admin\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|c:\\users\\user\\desktop\\myblog\\myblog\\views\\shared\\_layoutback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E221B65F-2548-4E0A-BC27-B69AADEEFAC9}|MyBlog\\MyBlog.csproj|solutionrelative:myblog\\views\\shared\\_layoutback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,23 +32,35 @@
               "RelativeDocumentMoniker": "MyBlog\\wwwroot\\js\\site.js",
               "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\wwwroot\\js\\site.js",
               "RelativeToolTip": "MyBlog\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBIAAAA0AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-07T14:29:58.79Z",
+              "WhenOpened": "2024-08-08T12:02:21.197Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MyBlog\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MyBlog\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T14:28:40.628Z",
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "MyBlog\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "MyBlog\\Areas\\Admin\\Controllers\\ContactController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T16:02:35.098Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LayoutBack.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Views\\Shared\\_LayoutBack.cshtml",
+              "RelativeDocumentMoniker": "MyBlog\\Views\\Shared\\_LayoutBack.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\MyBlog\\MyBlog\\Views\\Shared\\_LayoutBack.cshtml",
+              "RelativeToolTip": "MyBlog\\Views\\Shared\\_LayoutBack.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-07T16:01:49.562Z"
             }
           ]
         }

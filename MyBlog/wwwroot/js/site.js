@@ -18,7 +18,7 @@ function goAdmin(e) {
     function addAdminLink() {
         var adminlink = document.createElement('a');
         adminlink.href = '/Admin/Post/Index';
-        adminlink.textContent = 'Post';
+        adminlink.textContent = 'Admin';
         document.getElementById("goadmin").appendChild(adminlink)
     } 
 }
