@@ -22,3 +22,7 @@
      ⭡ ⭣ ⭡ ⭣ ⭠ ⭢ ⭠ ⭢
     ```
 2. 進入 Admin 後，有 POST、Category 和 Contact 可以查看
+
+## 參考資料
+* https://htmltemplates.co/blog-website-templates
+* ChatGPT
